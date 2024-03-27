@@ -1,0 +1,31 @@
+.loading{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../../public/images/117843736.webp);
+    background-position: center;
+    background-size: cover;
+    h1{
+        font-family: "Henny Penny", system-ui;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%,-50%);
+        font-size: 1rem;
+        color: #FFFF6B;
+        animation: yakınlaş;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes yakınlaş {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(7.5);
+    }
+}
+

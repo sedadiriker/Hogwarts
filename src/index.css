@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    cursor: none;
+    .sparkle { 
+        position: fixed;
+        width: 5px;
+        height: 10px;
+        background: rgb(253, 211, 2);
+        border-radius: 50%;
+        pointer-events: none;
+        animation: fadeOut 1s forwards;
+        box-shadow: 2px 3px 20px white;
+      }
+}
+
+@keyframes fadeOut {
+    to {
+      transform: translate(-50%, -50%) scale(1.5);
+      opacity: 0;
+    }
+  }
+
+
+
+@media screen and (max-width:900px){
+  
+  header {
+    height: 25vh !important;
+    background-size: contain !important;
+
+  }
+  .loading h1 {
+    animation: yakınlaşşş 5s ease forwards !important;
+    left: 43% !important; 
+
+  }
+  
+  @keyframes yakınlaşşş  {
+    0%{
+        transform: scale(0) ;
+    }
+    100%{
+      transform: scale(5.5);
+    }
+}
+}
+@media screen and (max-width:500px){
+  
+  header {
+    margin: 0 1rem !important;
+  }
+  .loading h1 {
+    font-size: 0.75rem !important; 
+    animation: yakınlaşş 5s ease forwards !important;
+    left: 35% !important; 
+
+  }
+  
+  @keyframes yakınlaşş  {
+    0%{
+        transform: scale(0) ;
+    }
+    100%{
+      transform: scale(3.5);
+    }
+}
+}

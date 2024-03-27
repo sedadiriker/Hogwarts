@@ -1,0 +1,14 @@
+header{
+    border: 20px double black;
+    background-color: #28364F;
+    height: 40vh;
+    margin:0 2rem;
+    background-image: url(../../../public/images/f3c0050632f8625e855e14645e38e66bba99be51_2_690x276.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    &:hover{
+        transform: scale(0.95);
+    }
+}
